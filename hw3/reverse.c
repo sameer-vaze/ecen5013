@@ -63,7 +63,7 @@ void main()
 		printf("%c",str2[i]);
 	}
 	printf("\n");
-	res = reverse(str1, 30);
+	res = reverse(str3, 30);
 	for(int i = 0;i < 30;i++)
 	{
 		printf("%c",str3[i]);
