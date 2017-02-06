@@ -32,7 +32,7 @@ char reverse(char * str, int length)	//function definition
 				*end = temp;
 				start ++;
 				end--;
-			}while(start + 1 != end && start < end);	//check for middle
+			}while(start != end+1);	//check for middle
 		}
 		else	//if length is odd
 		{
@@ -68,4 +68,26 @@ void main()
 	{
 		printf("%c",str3[i]);
 	}
+
+	printf("\n");
+	printf("++++++++IN HEX++++++++\n");
+
+	for(int i = 0;i < 17;i++)
+	{
+		printf("%x ",str1[i]);
+	}
+	printf("\n");
+	res = reverse(str2, 18);
+	for(int i = 0;i < 18;i++)
+	{
+		printf("%x ",str2[i]);
+	}
+	printf("\n");
+	res = reverse(str3, 30);
+	for(int i = 0;i < 30;i++)
+	{
+		printf("%x ",str3[i]);
+	}
+	printf("\n");
+
 }
