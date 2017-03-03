@@ -1,6 +1,12 @@
-#define SET_EQUAL(a,b) (a=(uint8_t)b)
+#include <stdio.h>
+#include <stdint.h>
 
-#define aa 10
-#define bb 0
+#define BASE 16
+#define OFFSET 10+BASE
 
-SET_EQUAL(bb,aa);
+int8_t var = OFFSET*2;
+
+void main()
+{
+	printf("What\n");
+}
